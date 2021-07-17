@@ -13,6 +13,7 @@ import {
   Separator,
   Footer
 } from "./styles"
+import { RectButtonProps } from "react-native-gesture-handler";
 
 
 interface Category {
@@ -51,8 +52,8 @@ export function CategorySelect({
             isActive={category.key === item.key}
             onPress={() => handleCategorySelect(item)}
           >
-              <Icon name={item.icon} />
-              <Name>{item.name}</Name>
+            <Icon name={item.icon} />
+            <Name>{item.name}</Name>
           </Category>
         )}
         ItemSeparatorComponent={() => <Separator />}
