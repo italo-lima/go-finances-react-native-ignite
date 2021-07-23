@@ -2,7 +2,7 @@ import React from "react"
 import { FlatList } from 'react-native-gesture-handler';
 
 import { Button } from '../../components/Form/Button';
-import { categories } from "../../components/categories";
+import { categories } from "../../utils/categories";
 import {
   Container,
   Header,
@@ -13,8 +13,6 @@ import {
   Separator,
   Footer
 } from "./styles"
-import { RectButtonProps } from "react-native-gesture-handler";
-
 
 interface Category {
   key: string;
